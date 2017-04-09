@@ -1,0 +1,56 @@
+[discord]
+id = "298249897973383168"
+secret = "h-x_nA0NSONJpjRmXGQVq7GzKUEt1uQa"
+callback = "https://f2892b66.ngrok.io/auth/discord/callback"
+
+# [steam]
+# id =
+# secret =
+# callback =
+
+[session]
+secret = "rushersdiscord" # make sure this is random
+
+[mongodb]
+host = "localhost"
+port = 27017
+db = "rushersdiscord"
+
+[plans]
+
+  [plans.decent]
+  name = "Decent"
+  price = 7.99
+  role = "300529662143234048"
+  features = [
+    "get to look pretty decent",
+    "not complete shit",
+    "definitely not a noob",
+    "has some swagger"
+  ]
+  description = "for those who don't want to look like complete shit"
+
+  [plans.good]
+  name = "Good"
+  price = 17.99
+  role = "300529761330135041"
+  features = [
+    "get to look pretty good",
+    "better than shit",
+    "noob? what's that",
+    "DEF has some swag"
+  ]
+  best = true
+  description = "for those who care a little bit more"
+
+  [plans.amazing]
+  name = "Amazing"
+  price = 13.99
+  role = "300529871749120000"
+  features = [
+    "look so good people wanna fuck",
+    "shit is not in your vocab",
+    "...lol",
+    "unlimited swag"
+  ]
+  description = "for those who are completely fuckin rich lmao"

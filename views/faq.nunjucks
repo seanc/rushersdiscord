@@ -1,0 +1,85 @@
+{% extends "master.nunjucks" %}
+
+{% block content %}
+  <header class="header text-center">
+    <div class="container">
+      <h1 class="title">FAQ</h1>
+      <p class="subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur et dolorem odit, sit fuga, beatae tempora expedita quaerat aut officia, alias possimus soluta minima consequuntur.
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="faq">
+      {# TODO: finish faq #}
+      <div class="row">
+        <div class="column">
+          <div class="question-block">
+            <p class="question">Do you like potatoes?</p>
+            <p class="answer">
+              Potatoes are the root of french fries,
+              therefore it only makes sense that I worship potatoes as well.
+              In fact, you can even go as far as to say that you should respect
+              potatoes much more than you do french fries.
+            </p>
+          </div>
+          <div class="question-block">
+            <p class="question">Do you like potatoes?</p>
+            <p class="answer">
+              Potatoes are the root of french fries,
+              therefore it only makes sense that I worship potatoes as well.
+              In fact, you can even go as far as to say that you should respect
+              potatoes much more than you do french fries.
+            </p>
+          </div>
+          <div class="question-block">
+            <p class="question">Do you like potatoes?</p>
+            <p class="answer">
+              Potatoes are the root of french fries,
+              therefore it only makes sense that I worship potatoes as well.
+              In fact, you can even go as far as to say that you should respect
+              potatoes much more than you do french fries.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="question-block">
+            <p class="question">Do you like potatoes?</p>
+            <p class="answer">
+              Potatoes are the root of french fries,
+              therefore it only makes sense that I worship potatoes as well.
+              In fact, you can even go as far as to say that you should respect
+              potatoes much more than you do french fries.
+            </p>
+          </div>
+          <div class="question-block">
+            <p class="question">Do you like potatoes?</p>
+            <p class="answer">
+              Potatoes are the root of french fries,
+              therefore it only makes sense that I worship potatoes as well.
+              In fact, you can even go as far as to say that you should respect
+              potatoes much more than you do french fries.
+            </p>
+          </div>
+          <div class="question-block">
+            <p class="question">Do you like potatoes?</p>
+            <p class="answer">
+              Potatoes are the root of french fries,
+              therefore it only makes sense that I worship potatoes as well.
+              In fact, you can even go as far as to say that you should respect
+              potatoes much more than you do french fries.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="separator"></div>
+      <div class="centered">
+        <a href="#" class="button white large">
+          <i class="fa fa-envelope"></i>
+          <span>Contact us</span>
+        </a>
+      </div>
+    </section>
+  </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  img {
+    width: 80px;
+  }
+
+  span {
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+  }
+}

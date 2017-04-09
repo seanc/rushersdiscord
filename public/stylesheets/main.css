@@ -1,0 +1,185 @@
+.text-center {
+  text-align: center; }
+
+.separator {
+  height: 20px;
+  display: block; }
+
+.centered {
+  display: flex;
+  justify-content: center; }
+
+.title {
+  font-weight: 600;
+  font-size: 28px; }
+
+.subtitle {
+  width: 75%;
+  margin: auto;
+  font-weight: 500; }
+
+body {
+  background-color: #6D1198;
+  font-family: 'Open Sans', sans-serif; }
+
+.navbar {
+  height: 80px;
+  line-height: 80px; }
+  .navbar .navbar-menu {
+    list-style: none;
+    margin: 0; }
+    .navbar .navbar-menu.icons .menu-item {
+      font-size: 14px; }
+      .navbar .navbar-menu.icons .menu-item:not(:last-child) {
+        margin-right: 15px !important; }
+      .navbar .navbar-menu.icons .menu-item .menu-link {
+        opacity: 1; }
+    .navbar .navbar-menu .menu-item {
+      float: left; }
+      .navbar .navbar-menu .menu-item:not(:last-child) {
+        margin-right: 25px; }
+      .navbar .navbar-menu .menu-item .menu-link {
+        color: #fff;
+        opacity: 0.6;
+        transition: opacity 200ms;
+        font-weight: 500;
+        font-size: 1.1em; }
+        .navbar .navbar-menu .menu-item .menu-link:hover {
+          opacity: 1; }
+        .navbar .navbar-menu .menu-item .menu-link.link-button {
+          background-color: #fff;
+          font-size: 14px;
+          color: #6D1198;
+          padding: 14px 8px;
+          padding-right: 12px;
+          border-radius: 4px; }
+          .navbar .navbar-menu .menu-item .menu-link.link-button > img {
+            width: 32px;
+            vertical-align: middle; }
+
+.header {
+  color: #fff;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.billing-plans {
+  display: flex;
+  margin: 0 auto; }
+  .billing-plans .billing-plan {
+    position: relative;
+    background-color: #fff;
+    width: 350px; }
+    .billing-plans .billing-plan:nth-child(1) {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      margin-left: auto; }
+    .billing-plans .billing-plan:nth-child(3) {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      margin-right: auto; }
+    .billing-plans .billing-plan.best-value {
+      box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.12);
+      transform: scale(1.1, 1.1);
+      border-radius: 4px;
+      position: relative;
+      z-index: 666; }
+    .billing-plans .billing-plan .column {
+      padding: 15px;
+      text-align: center; }
+    .billing-plans .billing-plan .plan-name {
+      color: #6D1198;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0; }
+    .billing-plans .billing-plan .plan-price {
+      color: #1E9CD7;
+      font-size: 2em;
+      font-weight: 800;
+      margin: 0; }
+      .billing-plans .billing-plan .plan-price:after {
+        content: '/ Month';
+        font-size: 15px;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 500; }
+    .billing-plans .billing-plan .plan-tag {
+      text-transform: uppercase;
+      color: #6D1198;
+      font-weight: 500;
+      font-size: 14px;
+      font-style: italic;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 95px; }
+    .billing-plans .billing-plan .plan-description {
+      text-align: center;
+      width: 75%;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      color: #646464; }
+    .billing-plans .billing-plan .plan-features {
+      list-style-type: none;
+      font-weight: 500; }
+      .billing-plans .billing-plan .plan-features > li:before {
+        content: '\2013';
+        margin-right: 5px; }
+    .billing-plans .billing-plan .button {
+      height: 45px;
+      line-height: 45px; }
+
+.button > img {
+  width: 32px;
+  vertical-align: middle; }
+
+.button.blue {
+  background-color: #1E9CD7 !important;
+  border-color: #1E9CD7 !important; }
+
+.button.white {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #6D1198; }
+
+.button.large {
+  height: 45px;
+  line-height: 45px; }
+
+.button.block {
+  display: block;
+  width: 80%;
+  margin: auto; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; }
+  .footer img {
+    width: 80px; }
+  .footer span {
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic; }
+
+.faq .question-block {
+  color: #fff; }
+  .faq .question-block .question {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 0; }
+    .faq .question-block .question:before {
+      content: 'Q: '; }
+  .faq .question-block .answer {
+    font-size: 16px; }
+    .faq .question-block .answer:before {
+      content: 'A: ';
+      font-size: 24px;
+      font-weight: 600; }
+
+/*# sourceMappingURL=main.css.map */

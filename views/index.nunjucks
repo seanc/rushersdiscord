@@ -1,0 +1,99 @@
+{% extends "master.nunjucks" %}
+
+{% block content %}
+  <header class="header text-center">
+    <div class="container">
+      <h1 class="title">Rushers Discord Subscriptions</h1>
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur et dolorem odit, sit fuga, beatae tempora expedita quaerat aut officia, alias possimus soluta minima consequuntur.
+      </p>
+      <div class="separator"></div>
+      <a href="#" class="button white large">
+        <img src="/images/discord.svg" alt="Discord Logo">
+        <span>Join our Discord</span>
+      </a>
+      <p class="subtitle"><strong>1337 People Online</strong></p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="billing-plans">
+      <div class="row">
+        {% for plan in plans %}
+          <div class="billing-plan {{ 'best-value' if plan.best }}">
+            <div class="column">
+              <h3 class="plan-name">{{ plan.name }}</h3>
+              <p class="plan-price">{{ plan.price }}</p>
+              {% if plan.best %}
+                <span class="plan-tag">Best Value!</span>
+              {% endif %}
+              <p class="plan-description">
+                {{ plan.description }}
+              </p>
+
+              <ul class="plan-features">
+                {% for feature in plan.features %}
+                  <li class="feature">{{ feature | title }}</li>
+                {% endfor %}
+              </ul>
+
+              <a href="#" class="button blue block">Subscribe</a>
+            </div>
+          </div>
+        {% endfor %}
+        {# <div class="billing-plan">
+          <div class="column">
+            <h3 class="plan-name">Rank Name</h3>
+            <p class="plan-price">$7.99</p>
+            <p class="plan-description">
+              Mauris quis ante dignissim, Juctus libero ut, rhonocus risus.
+            </p>
+
+            <ul class="plan-features">
+              <li class="feature">Something 1</li>
+              <li class="feature">Something 2</li>
+              <li class="feature">Something 3</li>
+            </ul>
+
+            <a href="#" class="button blue block">Checkout</a>
+          </div>
+        </div>
+        <div class="billing-plan best-value">
+          <div class="column">
+            <h3 class="plan-name">Rank Name</h3>
+            <p class="plan-price">$17.99</p>
+            <span class="plan-tag">Best Value!</span>
+            <p class="plan-description">
+              Mauris quis ante dignissim, Juctus libero ut, rhonocus risus.
+            </p>
+
+            <ul class="plan-features">
+              <li class="feature">Something 1</li>
+              <li class="feature">Something 2</li>
+              <li class="feature">Something 3</li>
+            </ul>
+
+            <a href="#" class="button blue block">Checkout</a>
+          </div>
+        </div>
+        <div class="billing-plan">
+          <div class="column">
+            <h3 class="plan-name">Rank Name</h3>
+            <p class="plan-price">$13.99</p>
+            <p class="plan-description">
+              Mauris quis ante dignissim, Juctus libero ut, rhonocus risus.
+            </p>
+
+            <ul class="plan-features">
+              <li class="feature">Something 1</li>
+              <li class="feature">Something 2</li>
+              <li class="feature">Something 3</li>
+            </ul>
+
+            <a href="#" class="button blue block">Checkout</a>
+          </div>
+        </div> #}
+      </div>
+    </section>
+  </div>
+{% endblock %}

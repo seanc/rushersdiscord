@@ -1,0 +1,10 @@
+{% extends "master.nunjucks" %}
+
+{% block content %}
+  <header class="header text-center">
+    <div class="container">
+      <h1 class="title">{{ status }} {{ message }}</h1>
+      <a href="/" class="button white large">Go Back</a>
+    </div>
+  </header>
+{% endblock %}

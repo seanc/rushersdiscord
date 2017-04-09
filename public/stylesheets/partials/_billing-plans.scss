@@ -1,0 +1,94 @@
+.billing-plans {
+  display: flex;
+  margin: 0 auto;
+
+  .billing-plan {
+    position: relative;
+    background-color: #fff;
+    width: 350px;
+
+    &:nth-child(1) {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      margin-left: auto;
+    }
+
+    &:nth-child(3) {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      margin-right: auto;
+    }
+
+    &.best-value {
+      box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.12);
+      transform: scale(1.1, 1.1);
+      border-radius: 4px;
+      position: relative;
+      z-index: 666;
+    }
+
+    .column {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .plan-name {
+      color: $purple;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .plan-price {
+      color: $blue;
+      font-size: 2em;
+      font-weight: 800;
+      margin: 0;
+
+      &:after {
+        content: '/ Month';
+        font-size: 15px;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 500;
+      }
+    }
+
+    .plan-tag {
+      text-transform: uppercase;
+      color: $purple;
+      font-weight: 500;
+      font-size: 14px;
+      font-style: italic;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 95px;
+    }
+
+    .plan-description {
+      text-align: center;
+      width: 75%;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      color: #646464;
+    }
+
+    .plan-features {
+      list-style-type: none;
+      font-weight: 500;
+
+
+      > li:before {
+        content: '\2013';
+        margin-right: 5px;
+      }
+    }
+
+    .button {
+      height: 45px;
+      line-height: 45px;
+    }
+  }
+}

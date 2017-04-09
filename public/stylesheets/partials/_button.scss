@@ -1,0 +1,28 @@
+.button {
+  > img {
+    width: 32px;
+    vertical-align: middle;
+  }
+
+  &.blue {
+    background-color: $blue !important;
+    border-color: $blue !important;
+  }
+
+  &.white {
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: $purple;
+  }
+
+  &.large {
+    height: 45px;
+    line-height: 45px;
+  }
+
+  &.block {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+}

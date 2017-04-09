@@ -1,0 +1,25 @@
+.faq {
+  .question-block {
+    color: #fff;
+
+    .question {
+      font-weight: 600;
+      font-size: 28px;
+      margin-bottom: 0;
+
+      &:before {
+        content: 'Q: '
+      }
+    }
+
+    .answer {
+      font-size: 16px;
+      
+      &:before {
+        content: 'A: ';
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+  }
+}
