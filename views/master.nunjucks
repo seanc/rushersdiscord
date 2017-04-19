@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:site_name" content="Rushers Discord">
+  <meta property="og:title" content="Rushers Discord">
+  <meta property="og:description" content="Subscription earnings will be used to further improve Rushers Discord and compensate members of the staff team who spend their time continuously improving the Discord">
+  <meta property="og:image" content="https://rushersdiscord.com/images/pink-large.png">
+  <meta property="og:url" content="https://rushersdiscord.com">
+  <meta name="description" content="Subscription earnings will be used to further improve Rushers Discord and compensate members of the staff team who spend their time continuously improving the Discord">
   <title>Rushers Discord Subscriptions</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
