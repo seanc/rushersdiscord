@@ -34,7 +34,7 @@
 
               <ul class="plan-features" data-mh="plan-features">
                 {% for feature in plan.features %}
-                  <li class="feature">{{ feature | title }}</li>
+                  <li class="feature">{{ feature }}</li>
                 {% endfor %}
               </ul>
 

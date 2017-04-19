@@ -33,7 +33,7 @@ cipherSecret = "foobarbazqux" # DO NOT LOSE THIS.
   name = "Gold"
   price = 5.00
   features = [
-    "Access to \"Video Suggestions for Rusher\" text channel",
+    "Listen To \"Video Suggestions For Rusher\" Text Channel With Shoutout Privileges"
   ]
   itemNumber = "300529382580289537"
   buttonID = "RA5DQTDBDVLQC"
@@ -42,9 +42,9 @@ cipherSecret = "foobarbazqux" # DO NOT LOSE THIS.
   name = "Champion"
   price = 25.00
   features = [
-    "Can enter in a weekly lottery to play and talk with TheCampingRusher each Sunday",
-    "Access to \"Video Suggestions for Rusher\" text channel",
-    "Listen in on videos at any time",
+    "Can Enter In A Weekly Lottery To Play And Talk With TheCampingRusher Each Sunday",
+    "Listen To \"Video Suggestions For Rusher\" Text Channel With Shoutout Privileges",
+    "Listen In On Videos At Any Time"
   ]
   best = true
   itemNumber = "300529352821440514"
@@ -54,8 +54,8 @@ cipherSecret = "foobarbazqux" # DO NOT LOSE THIS.
   name = "Platinum"
   price = 10.00
   features = [
-    "Listen in on videos at any time",
-    "Access to \"Video Suggestions for Rusher\" text channel",
+    "Listen In On Videos At Any Time",
+    "Listen To \"Video Suggestions For Rusher\" Text Channel With Shoutout Privileges"
   ]
   itemNumber = "300529406986682368"
   buttonID = "K6GSN8M855HSU"
@@ -64,6 +64,6 @@ cipherSecret = "foobarbazqux" # DO NOT LOSE THIS.
 guild = "300529317992071168"
 logChannel = "300529317992071168"
 confirmChannel = "302701901143867393"
-confirmMessage = "Thanks for purchasing {{item}}, {{userMention}}!\nWe really appreciate it"
+confirmMessage = "Huge thanks to {{userMention}} for subscribing to the {{item}} package!\nYou can purchase subscriptions @ rushersdiscord.com"
 token = "Mjk4MjQ5ODk3OTczMzgzMTY4.C9P4ZA.rQz2rG0R5ftNIZNaClROdQNyMOo"
 inviteCode = "dka4rUx"

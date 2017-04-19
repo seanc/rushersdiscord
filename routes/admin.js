@@ -63,6 +63,7 @@ router.get('/users', (req, res) => {
         cb(err, user)
       })
     }, (err, users) => {
+      users = users.filter(u => u.active)
       res.render('admin/users', { users, profits: req.profits })
     })
   })
