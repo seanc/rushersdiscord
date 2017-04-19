@@ -45,6 +45,12 @@
       font-weight: 800;
       margin: 0;
 
+      &:before {
+        content: '$';
+        font-size: 24px;
+        vertical-align: top;
+      }
+
       &:after {
         content: '/ Month';
         font-size: 15px;

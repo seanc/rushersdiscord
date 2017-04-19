@@ -5,7 +5,7 @@
     <div class="container">
       <h1 class="title">FAQ</h1>
       <p class="subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur et dolorem odit, sit fuga, beatae tempora expedita quaerat aut officia, alias possimus soluta minima consequuntur.
+        Have some questions? Here are some commonly asked questions and answers. Can't find what you're looking for? Send us an email.
       </p>
     </div>
   </header>
@@ -16,66 +16,66 @@
       <div class="row">
         <div class="column">
           <div class="question-block">
-            <p class="question">Do you like potatoes?</p>
+            <p class="question">Do I need o pay to access the discord?</p>
             <p class="answer">
-              Potatoes are the root of french fries,
-              therefore it only makes sense that I worship potatoes as well.
-              In fact, you can even go as far as to say that you should respect
-              potatoes much more than you do french fries.
+              No, you do not need to pay or subscribe to access the Discord server.
             </p>
           </div>
           <div class="question-block">
-            <p class="question">Do you like potatoes?</p>
+            <p class="question">Do I get a chance to play with Rusher?</p>
             <p class="answer">
-              Potatoes are the root of french fries,
-              therefore it only makes sense that I worship potatoes as well.
-              In fact, you can even go as far as to say that you should respect
-              potatoes much more than you do french fries.
+              Yes, Rusher will be randomly drawing from a pool of all Champion
+              rank individuals to play Rocket League with him. This will happen
+              every Sunday known as "Sub Sunday".
             </p>
           </div>
           <div class="question-block">
-            <p class="question">Do you like potatoes?</p>
+            <p class="question">Will ranks get better perks over time?</p>
             <p class="answer">
-              Potatoes are the root of french fries,
-              therefore it only makes sense that I worship potatoes as well.
-              In fact, you can even go as far as to say that you should respect
-              potatoes much more than you do french fries.
+              Yes, we are looking to implement many more features into each rank
+              in the near future.
             </p>
           </div>
         </div>
         <div class="column">
           <div class="question-block">
-            <p class="question">Do you like potatoes?</p>
+            <p class="question">Can I listen to Rusher while he is recording a video?</p>
             <p class="answer">
-              Potatoes are the root of french fries,
-              therefore it only makes sense that I worship potatoes as well.
-              In fact, you can even go as far as to say that you should respect
-              potatoes much more than you do french fries.
+              Yes, with the Platinum rank and above you have the ability to join
+              the "Recording Suite" to listen to the recordings! PS. No talking.
             </p>
           </div>
           <div class="question-block">
-            <p class="question">Do you like potatoes?</p>
+            <p class="question">Do you only accept PayPal?</p>
             <p class="answer">
-              Potatoes are the root of french fries,
-              therefore it only makes sense that I worship potatoes as well.
-              In fact, you can even go as far as to say that you should respect
-              potatoes much more than you do french fries.
+              Yes, right now we only accept payments through PayPal.
             </p>
           </div>
           <div class="question-block">
-            <p class="question">Do you like potatoes?</p>
+            <p class="question">Do I have to pay monthly or just a one time payment?</p>
             <p class="answer">
-              Potatoes are the root of french fries,
-              therefore it only makes sense that I worship potatoes as well.
-              In fact, you can even go as far as to say that you should respect
-              potatoes much more than you do french fries.
+              This is a subscription based service. This means payments are monthly
+              based. You can cancel at anytime but you will lose the benefits.
+            </p>
+          </div>
+          <div class="question-block">
+            <p class="question">I have bought one of the packages... How do I get my rank?</p>
+            <p class="answer">
+              Our bot will automatically assign you your rank within 10 minutes of purchase.
+            </p>
+          </div>
+          <div class="question-block">
+            <p class="question">I'm having a problem, who do I contact?</p>
+            <p class="answer">
+              Please send a detailed email to <a href="mailto:support@rushersdiscord.com">support@rushersdiscord.com</a>
+              and we will do our best to respond as soon as possible.
             </p>
           </div>
         </div>
       </div>
       <div class="separator"></div>
       <div class="centered">
-        <a href="#" class="button white large">
+        <a href="mailto:support@rushersdiscord.com" class="button white large">
           <i class="fa fa-envelope"></i>
           <span>Contact us</span>
         </a>

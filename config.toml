@@ -1,12 +1,14 @@
+admins = ["76561198090501821", "76561198033132614", "76561198061044473"]
+
 [discord]
 id = "298249897973383168"
 secret = "h-x_nA0NSONJpjRmXGQVq7GzKUEt1uQa"
-callback = "https://f2892b66.ngrok.io/auth/discord/callback"
+callback = "http://rusher.lt.imsean.me/auth/discord/callback"
 
-# [steam]
-# id =
-# secret =
-# callback =
+[steam]
+apiKey = "7B41488FCE3598BC40659CD8E55D0964"
+realm = "http://rusher.lt.imsean.me/"
+callback = "http://rusher.lt.imsean.me/auth/steam/callback"
 
 [session]
 secret = "rushersdiscord" # make sure this is random
@@ -16,41 +18,52 @@ host = "localhost"
 port = 27017
 db = "rushersdiscord"
 
+[billing]
+sandbox = false
+cipherSecret = "foobarbazqux" # DO NOT LOSE THIS.
+
+  [billing.api]
+  username = "sales_api1.thestrivestore.com"
+  password = "DM7T3MJGWNUBGWHL"
+  signature = "AFcWxV21C7fd0v3bYYYRCpSSRl31AcF9-DtrIwNdQagMgSb-vJzf-Mwh"
+
 [plans]
 
-  [plans.decent]
-  name = "Decent"
-  price = 7.99
-  role = "300529662143234048"
+  [plans.gold]
+  name = "Gold"
+  price = 5.00
   features = [
-    "get to look pretty decent",
-    "not complete shit",
-    "definitely not a noob",
-    "has some swagger"
+    "Access to \"Video Suggestions for Rusher\" text channel",
   ]
-  description = "for those who don't want to look like complete shit"
+  itemNumber = "300529382580289537"
+  buttonID = "RA5DQTDBDVLQC"
 
-  [plans.good]
-  name = "Good"
-  price = 17.99
-  role = "300529761330135041"
+  [plans.champion]
+  name = "Champion"
+  price = 25.00
   features = [
-    "get to look pretty good",
-    "better than shit",
-    "noob? what's that",
-    "DEF has some swag"
+    "Can enter in a weekly lottery to play and talk with TheCampingRusher each Sunday",
+    "Access to \"Video Suggestions for Rusher\" text channel",
+    "Listen in on videos at any time",
   ]
   best = true
-  description = "for those who care a little bit more"
+  itemNumber = "300529352821440514"
+  buttonID = "HK6HK6ESURLY4"
 
-  [plans.amazing]
-  name = "Amazing"
-  price = 13.99
-  role = "300529871749120000"
+  [plans.platinum]
+  name = "Platinum"
+  price = 10.00
   features = [
-    "look so good people wanna fuck",
-    "shit is not in your vocab",
-    "...lol",
-    "unlimited swag"
+    "Listen in on videos at any time",
+    "Access to \"Video Suggestions for Rusher\" text channel",
   ]
-  description = "for those who are completely fuckin rich lmao"
+  itemNumber = "300529406986682368"
+  buttonID = "K6GSN8M855HSU"
+
+[bot]
+guild = "300529317992071168"
+logChannel = "300529317992071168"
+confirmChannel = "302701901143867393"
+confirmMessage = "Thanks for purchasing {{item}}, {{userMention}}!\nWe really appreciate it"
+token = "Mjk4MjQ5ODk3OTczMzgzMTY4.C9P4ZA.rQz2rG0R5ftNIZNaClROdQNyMOo"
+inviteCode = "dka4rUx"

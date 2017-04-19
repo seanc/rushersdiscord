@@ -1,0 +1,66 @@
+{% extends "master.nunjucks" %}
+
+{% block navbar %}
+<div class="navbar">
+  <div class="container">
+    <div class="clearfix">
+      <div class="float-left">
+        <div class="navbar-brand">
+          <a href="/">
+            <img src="/images/pink-large.png" alt="" class="brand-image">
+          </a>
+        </div>
+
+        <ul class="navbar-menu">
+          <li class="menu-item"><a href="/" class="menu-link">Home</a></li>
+          <li class="menu-item"><a href="/admin/users" class="menu-link">Users</a></li>
+          <li class="menu-item"><a href="/admin/subscriptions" class="menu-link">Subscriptions</a></li>
+        </ul>
+      </div>
+
+      <div class="float-right">
+        <ul class="navbar-menu">
+          <li class="menu-item"><a href="/auth/logout" class="menu-link">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="dashboard-stats">
+      <div class="row">
+        <div class="column">
+          <div class="stat">
+            <p class="stat-name">Daily Income</p>
+            <p class="stat-value">{{ profits.day }}</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="stat">
+            <p class="stat-name">Weekly Income</p>
+            <p class="stat-value">{{ profits.week }}</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="stat">
+            <p class="stat-name">Monthly Income</p>
+            <p class="stat-value">{{ profits.month }}</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="stat">
+            <p class="stat-name">Total Income</p>
+            <p class="stat-value">{{ profits.total }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

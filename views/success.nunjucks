@@ -1,0 +1,10 @@
+{% extends "master.nunjucks" %}
+
+{% block content %}
+  <header class="header text-center">
+    <div class="container">
+      <h1 class="title">Awesome! Thanks for supporting us!</h1>
+      <p class="subtitle">Your payment has successfully been received and processed. You should receive your rewards within 10 minutes.</p>
+    </div>
+  </header>
+{% endblock %}

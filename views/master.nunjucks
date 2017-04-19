@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Rushers Discord Subscriptions</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -17,7 +17,9 @@
         <div class="clearfix">
           <div class="float-left">
             <div class="navbar-brand">
-              {# logo here #}
+              <a href="/">
+                <img src="/images/pink-large.png" alt="" class="brand-image">
+              </a>
             </div>
 
             <ul class="navbar-menu">
@@ -28,10 +30,10 @@
 
           <div class="float-right">
             <ul class="navbar-menu icons">
-              <li class="menu-item"><a href="#" class="menu-link"><i class="fa fa-twitter"></i>
+              <li class="menu-item"><a href="https://www.twitter.com/TheCampingRush" class="menu-link"><i class="fa fa-twitter"></i>
                 <span>Follow us</span>
               </a></li>
-              <li class="menu-item"><a href="#" class="menu-link"><i class="fa fa-youtube-play"></i>
+              <li class="menu-item"><a href="https://www.youtube.com/TheCampingRusher" class="menu-link"><i class="fa fa-youtube-play"></i>
                 <span>Subscribe</span>
               </a></li>
             </ul>
@@ -45,9 +47,18 @@
   {% endblock %}
   {% block footer %}
     <div class="footer">
-      <span>Powered by</span>
-      <img src="/images/paypal.png" alt="PayPal Logo">
+      <div>
+        <span>Powered by</span>
+        <img src="/images/paypal.png" alt="PayPal Logo">
+      </div>
+      <div>
+        <img src="/images/discord-partner.png"  class="discord-partner-logo" alt="Discord Partner Logo">
+      </div>
     </div>
   {% endblock %}
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  <script src="/javascripts/main.js"></script>
 </body>
 </html>

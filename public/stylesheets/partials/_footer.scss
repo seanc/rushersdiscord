@@ -3,9 +3,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  flex-direction: column;
 
   img {
     width: 80px;
+    vertical-align: middle
   }
 
   span {
@@ -13,5 +15,9 @@
     color: #fff;
     font-weight: 500;
     font-style: italic;
+  }
+
+  .discord-partner-logo {
+    filter: brightness(0) invert(1);
   }
 }

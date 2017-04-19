@@ -1,0 +1,146 @@
+.subscribe-button {
+  height: 60px;
+  line-height: 60px;
+  margin-left: auto;
+
+  > img {
+    width: 80px;
+    margin-left: 5px;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: #646464 !important;
+    border-color: #646474 !important;
+  }
+}
+
+.subscribe {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 25px 0;
+
+  .row {
+    padding: 24px;
+  }
+
+  .logout-button {
+    margin-right: 15px;
+  }
+
+  .step {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    &.pending {
+      .button {
+        background-color: $purple !important;
+        border-color: $purple !important;
+        cursor: auto !important;
+        pointer-events: auto !important;
+
+        > img {
+          filter: none !important;
+        }
+      }
+    }
+
+    &.completed {
+      .button {
+        cursor: not-allowed;
+        pointer-events: none;
+        background-color: #646464 !important;
+        border-color: #646474 !important;
+      }
+
+      &:after {
+        content: '\f00c';
+        font-size: 25px;
+        font-family: FontAwesome;
+        color: $purple;
+        text-align: center;
+      }
+    }
+
+    .step-title {
+      text-align: center;
+      color: $purple;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    input[type="submit"] {
+      width: 100% !important;
+      cursor: pointer !important;
+      pointer-events: auto !important;
+
+      &:hover {
+        cursor: pointer !important;
+      }
+    }
+
+    .button {
+      height: 60px;
+      line-height: 60px;
+      cursor: not-allowed;
+      pointer-events: none;
+      background-color: #646464 !important;
+      border-color: #646474 !important;
+
+      > img {
+        filter: grayscale(100%);
+
+        &.smaller {
+          width: 28px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .plan {
+    padding: 0 24px;
+
+    .plan-details, .price {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 50px;
+    }
+
+    .price-label, .detail-label {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    .plan-detail {
+      font-size: 28px;
+      font-weight: 600;
+      color: $blue;
+    }
+
+    .plan-price {
+      font-size: 28px;
+      color: $blue;
+      font-weight: 600;
+
+      &:before {
+        content: '$';
+        font-size: 16px;
+        vertical-align: top;
+      }
+
+      &:after {
+        content: '/ Month';
+        font-weight: 500;
+        font-size: 14px;
+        font-style: italic;
+      }
+    }
+  }
+}

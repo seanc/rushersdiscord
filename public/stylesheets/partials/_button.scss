@@ -9,6 +9,12 @@
     border-color: $blue !important;
   }
 
+  &.purple {
+    background-color: $purple !important;
+    border-color: $purple !important;
+    color: #fff;
+  }
+
   &.white {
     background-color: #fff !important;
     border-color: #fff !important;
@@ -18,6 +24,11 @@
   &.large {
     height: 45px;
     line-height: 45px;
+  }
+
+  &.small {
+    height: 32px !important;
+    line-height: 32px !important;
   }
 
   &.block {

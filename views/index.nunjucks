@@ -5,14 +5,15 @@
     <div class="container">
       <h1 class="title">Rushers Discord Subscriptions</h1>
       <p class="subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur et dolorem odit, sit fuga, beatae tempora expedita quaerat aut officia, alias possimus soluta minima consequuntur.
+        Subscription earnings will be used to further improve Rushers Discord and compensate members of the staff team who spend their time continuously improving the Discord
       </p>
       <div class="separator"></div>
-      <a href="#" class="button white large">
+      <a href="https://discordapp.com/invite/rusher" class="button white large">
         <img src="/images/discord.svg" alt="Discord Logo">
         <span>Join our Discord</span>
       </a>
-      <p class="subtitle"><strong>1337 People Online</strong></p>
+      {# TODO: api endpoint to get online users #}
+      <p class="subtitle"><strong><span class="online">{{ online }}</span> People Online</strong></p>
     </div>
   </header>
 
@@ -31,13 +32,13 @@
                 {{ plan.description }}
               </p>
 
-              <ul class="plan-features">
+              <ul class="plan-features" data-mh="plan-features">
                 {% for feature in plan.features %}
                   <li class="feature">{{ feature | title }}</li>
                 {% endfor %}
               </ul>
 
-              <a href="#" class="button blue block">Subscribe</a>
+              <a href="/subscribe/{{ plan.name }}" class="button blue block">Subscribe</a>
             </div>
           </div>
         {% endfor %}

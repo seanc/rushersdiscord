@@ -3,7 +3,11 @@
 {% block content %}
   <header class="header text-center">
     <div class="container">
-      <h1 class="title">{{ status }} {{ message }}</h1>
+      <h1 class="title">Shoot. Looks like something went wrong.</h1>
+      <p class="subtitle">
+        {{ message | capitalize }}
+      </p>
+      <div class="separator"></div>
       <a href="/" class="button white large">Go Back</a>
     </div>
   </header>

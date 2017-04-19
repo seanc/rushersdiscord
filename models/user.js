@@ -4,8 +4,7 @@ const User = mongoose.model('User', {
   steamID: String,
   discordID: String,
   roleID: String,
-  email: String,
-  subStatus: Boolean
+  email: String
 })
 
 module.exports = User

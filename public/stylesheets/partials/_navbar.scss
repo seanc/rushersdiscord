@@ -2,9 +2,20 @@
   height: 80px;
   line-height: 80px;
 
+  .navbar-brand {
+    display: inline-block;
+    vertical-align: top;
+    .brand-image {
+      width: 50px;
+      vertical-align: middle;
+      margin-right: 25px;
+    }
+  }
+
   .navbar-menu {
     list-style: none;
     margin: 0;
+    display: inline-block;
 
     &.icons .menu-item {
       font-size: 14px;

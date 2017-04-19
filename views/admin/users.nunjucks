@@ -1,0 +1,24 @@
+{% include "./layout.nunjucks" %}
+
+{% block content %}
+  <div class="container">
+    <table class="table dashboard-table">
+      <thead>
+        <th>Email Address</th>
+        <th>Steam ID</th>
+        <th>Discord ID</th>
+        <th>Status</th>
+      </thead>
+      <tbody>
+        {% for user in users %}
+          <tr>
+            <td>{{ user.email }}</td>
+            <td>{{ user.steamID }}</td>
+            <td>{{ user.discordID }}</td>
+            <td>{{ 'Active' if user.active else 'Inactive' }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

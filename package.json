@@ -7,9 +7,16 @@
     "dev": "nodemon --watch public --watch routes --watch views --watch models --watch middleware --watch lib --watch bin -x node bin/www"
   },
   "dependencies": {
+    "async.map": "^0.5.2",
     "body-parser": "~1.17.1",
+    "catlog": "^1.0.9",
+    "connect-ensure-login": "^0.1.1",
     "cookie-parser": "~1.4.3",
+    "crypto-js": "^3.1.9-1",
+    "csurf": "^1.9.0",
+    "currency-formatter": "^1.2.1",
     "debug": "~2.6.3",
+    "discord.js": "^11.0.0",
     "each-async": "^1.1.1",
     "express": "~4.15.2",
     "express-nunjucks": "^2.2.3",
@@ -23,7 +30,10 @@
     "passport": "^0.3.2",
     "passport-discord": "^0.1.2",
     "passport-steam": "^1.0.8",
+    "paypal-ipn": "^3.0.0",
+    "pixie": "^1.2.0",
     "serve-favicon": "~2.4.2",
+    "superagent": "^3.5.2",
     "toml-require": "^1.1.0"
   }
 }

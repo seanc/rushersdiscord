@@ -1,0 +1,133 @@
+{% extends "master.nunjucks" %}
+
+{% block content %}
+  <div class="modal" data-modal="tos">
+    <div class="modal-content">
+      <div class="modal-heading">
+        Please read the terms and conditions
+
+        <div class="modal-close">
+          <i class="fa fa-times"></i>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p>We reserve the right to change, with or without notice, pricing, benefits, names, etc. By agreeing to these Terms and Conditions, you are purchasing a service from Rushers Discord and will not attempt to chargeback your subscription. </p>
+        <p>By agreeing to the terms and conditions of Rushers Discord, also known as the registered business 1078379 BC Ltd, you agree that you will not do the following:</p>
+        <ol type="I">
+          <li>By checking this box, you are fully aware and agree that there will be NO refunds given on this payment. Chargebacks / Disputes  will result in rank removal</li>
+          <li>You agree to indemnify the owner, staff, hosts, officers, directors, partners, and all other parties related to Rushers Discord server staff. By agreeing to these terms, you agree not to present any lawsuit or other legal challenge against the Discord Server or the servers staff, whether related to your purchase or not.</li>
+          <li>You understand and agree that the use of this website, server, or any other content is made available and provided to you at your own risk. We disclaim all warranties of any kind, expressed or implied, including but not limited to warranties of merchant ability fitness for a purpose, and non-infringement. You use all information and services at your own risk without our liability of any kind.</li>
+          <li>You understand and agree that we shall not be liable for any direct, indirect, incidental, special, exemplary, accidental, or consequential damages resulting from the use or inability of any services, unauthorized action to or alteration of your data, statements or conduct of any third party on the service, or any other matter relating to the server or the service. (V) We reserve the rights to forcibly make you leave the server, permanently or otherwise, with no refund.</li>
+          <li>By accepting the terms of this document, you waive your right to take any action, legal or otherwise, against anyone or anything related to the server, website, staff and administration, members, or any other services relating to this server. You also acknowledge that if any part of this document is found to be invalid or unenforceable in any way, any parts found to be invalid or unenforceable will be considered fully valid and legally binding.</li>
+          <li>All terms and conditions are in effect indefinitely as soon as the contract is accepted, and will remain active even after you quit, or are banned, removed, or leave the server, website, or other services in any way.</li>
+        </ol>
+        <p>Rushers Discord is in no way affiliated with Discord Inc. </p>
+      </div>
+      <div class="modal-footer">
+        <div class="clearfix">
+          <div class="pull-right">
+            <form action="https://www{{ '.sandbox' if isSandbox }}.paypal.com/cgi-bin/webscr" method="POST" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="{{ plan.buttonID }}">
+              <input type="hidden" name="custom" value="{{ paypalUser }}">
+              <button type="submit" class="button blue large subscribe-button {{ 'disabled' if not user or not user.discordID or not user.steamID }}">
+                <span>Checkout with</span>
+                <img src="/images/paypal.png" alt="Checkout with paypal" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header text-center">
+    <div class="container">
+      <h1 class="title">To continue please follow these steps</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="subscribe">
+      <div class="text-center">
+        <p class="muted"><strong>Please complete the following steps</strong></p>
+      </div>
+
+      <div class="row">
+        {# <div class="column">
+          <div class="step pending">
+            <p class="step-title">Step 1</p>
+            <a href="#" class="button purple large">
+              Enter email address
+            </a>
+            <form action="/auth/email" method="POST">
+              <input type="email" name="email" placeholder="Email address">
+              <input type="submit" class="button purple small block" value="Submit">
+            </form>
+          </div>
+        </div> #}
+        <div class="column">
+          <div class="step {{ 'completed' if user and user.discordID else 'pending' }}">
+            <p class="step-title">Step 1</p>
+            <a href="/auth/discord" class="button purple large">
+              <img src="/images/discord-white.svg" alt="Discord Logo">
+              <span>Login to Discord</span>
+            </a>
+          </div>
+        </div>
+        <div class="column">
+          {% if user.steamID and user %}
+            {% set twoClass = 'completed' %}
+          {% elif user.discordID %}
+            {% set twoClass = 'pending' %}
+          {% else %}
+            {% set twoClass = '' %}
+          {% endif %}
+          <div class="step {{ twoClass }}">
+            <p class="step-title">Step 2</p>
+            <a href="/auth/steam" class="button purple large">
+              <img src="/images/steam.svg" alt="Steam Logo" class="smaller">
+              <span>Login to steam</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div class="plan">
+        <div class="clearfix">
+          <div class="float-left">
+            <div class="plan-details">
+              <p class="detail-label">Plan</p>
+              <p class="plan-detail">{{ plan.name }}</p>
+            </div>
+            <div class="price">
+              <p class="price-label">Total</p>
+              <p class="plan-price">{{ plan.price }}</p>
+            </div>
+          </div>
+          <div class="float-right">
+            <div class="clearfix">
+              <div class="float-left">
+                <a href="/auth/logout" class="button blue large logout-button subscribe-button {{ 'disabled' if not user }}">Logout</a>
+              </div>
+
+              <div class="float-right">
+                {# <form action="https://www{{ '.sandbox' if isSandbox }}.paypal.com/cgi-bin/webscr" method="POST" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="{{ plan.buttonID }}">
+                  <input type="hidden" name="custom" value="{{ paypalUser }}">
+                  <button type="submit" class="button blue large subscribe-button {{ 'disabled' if not user or not user.discordID or not user.steamID }}">
+                    <span>Checkout with</span>
+                    <img src="/images/paypal.png" alt="Checkout with paypal" />
+                  </button>
+                </form> #}
+                <a href="#" class="button blue large subscribe-button {{ 'disabled' if not user or not user.discordID or not user.steamID }}" data-trigger-modal="tos">Continue</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endblock %}
