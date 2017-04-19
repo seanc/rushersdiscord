@@ -17,6 +17,7 @@ var SteamStrategy = require('passport-steam').Strategy
 var csrf = require('csurf')
 var superagent = require('superagent')
 var catlog = require('catlog')('app:main ')
+var helmet = require('helmet')
 
 var index = require('./routes/index');
 var auth = require('./routes/auth')
@@ -102,10 +103,14 @@ nunjucks.configure('views', {
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'nunjucks');
+app.set('trust proxy', 1)
+
+app.disable('x-powered-by')
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev', { skip: (req, res) => req.path === '/online' }));
+app.use(helmet())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -121,7 +126,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   name: 'rushersdiscord',
-  cookie: { secure: false }
+  cookie: { secure: true },
 }))
 app.use(passport.initialize())
 app.use(passport.session())

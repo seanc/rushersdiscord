@@ -21,6 +21,7 @@
     "express": "~4.15.2",
     "express-nunjucks": "^2.2.3",
     "express-session": "^1.15.2",
+    "helmet": "^3.5.0",
     "jade": "~1.11.0",
     "mongoose": "^4.9.3",
     "mongoose-find-one-or-create": "^0.2.0",
