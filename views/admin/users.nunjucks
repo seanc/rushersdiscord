@@ -7,7 +7,6 @@
         <th>Email Address</th>
         <th>Steam ID</th>
         <th>Discord ID</th>
-        <th>Status</th>
       </thead>
       <tbody>
         {% for user in users %}
@@ -15,7 +14,6 @@
             <td>{{ user.email }}</td>
             <td>{{ user.steamID }}</td>
             <td>{{ user.discordID }}</td>
-            <td>{{ 'Active' if user.active else 'Inactive' }}</td>
           </tr>
         {% endfor %}
       </tbody>
