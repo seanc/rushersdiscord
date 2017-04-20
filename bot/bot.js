@@ -97,7 +97,7 @@ start.getOnline = function getOnline() {
       if (bot.status !== 0) {
         setTimeout(() => get(), 1000)
       } else {
-        resolve(bot.guilds.get(config.bot.guild).members.filter(m => m.presence.status === 'online').size)
+        resolve(bot.guilds.get(config.bot.guild).members.filter(m => m.presence.status !== 'offline').size)
       }
     }
 
