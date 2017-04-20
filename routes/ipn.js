@@ -131,7 +131,7 @@ router.post('/', (req, res) => {
       }
     }
 
-    if (body.txn_type === 'subscr_eot' || body.txn_type === 'subscr_cancel' && body.custom) {
+    if (body.txn_type === 'subscr_eot' || body.txn_type === 'subscr_cancel' || body.txn_type === 'subscr_refunded' || body.txn_type === 'subscr_suspended' && body.custom) {
       const bytes = CryptoJS.AES.decrypt(body.custom, config.billing.cipherSecret)
       const user = JSON.parse(bytes.toString(CryptoJS.enc.Utf8))
 
